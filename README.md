@@ -39,6 +39,12 @@ python3 -m venv .venv
 GPU使用の場合は PyTorch を別途インストール：
 https://pytorch.org/get-started/locally/
 
+**注意事項**
+
+- Python 3.13.x を使用すること（バージョンが異なると torch のインストールに失敗する場合あり）
+- Intel Mac / Linux では `requirements.txt` のホイールが合わない場合があるので `pip install demucs` から入れ直す
+- モデルファイル（約80MB）は初回実行時に `~/.cache/torch/hub/checkpoints/` へ自動ダウンロードされる（ネット接続が必要）
+
 ---
 
 ## 使い方
