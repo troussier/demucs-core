@@ -22,8 +22,18 @@
 
 ## セットアップ
 
+**システム依存（pip管理外）**
+
 ```bash
-pip install demucs
+# macOS
+brew install ffmpeg
+```
+
+**Python 依存**
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
 ```
 
 GPU使用の場合は PyTorch を別途インストール：
